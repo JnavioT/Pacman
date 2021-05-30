@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PacmanAndroid</string>
+    <string name="action_settings">Settings</string>
+    <string name ="resume">Resume</string>
+    <string name="play">New Game</string>
+    <string name="help">How To Play</string>
+
+    <string name="howToPlayLabel">HOW TO PLAY</string>
+    <string name="howToPlay">Pacman, our hero, munches his way around the map, eating all of the
+        dots. However, life isn\'t easy for our young little hero. Along his journey, he faces
+        spooky ghosts who will try to hurt him. Avoid them! In each corner of the map, there is a
+        power pellet. If Pacman eats a power pellet, he is temporarily gains the power to eat enemy
+        ghosts.
+    </string>
+    <string name="controlsLabel">CONTROLS</string>
+    <string name="controls">Up: Swipe Up\nDown: Swipe Down\nLeft: Swipe Left\nRight: Swipe Right\n
+        "Pause: Hold Screen    "
+    </string>
+    <string name="settingsLabel">Settings</string>
+    <string name="resumeLabel">Resume</string>
+</resources>
