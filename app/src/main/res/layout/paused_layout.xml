@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,52 +10,64 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/black"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.game1.pacmanandroid.MainActivity">
+    tools:context="com.example.game1.pacmanandroid.PauseActivity">
 
     <ImageView
         android:id="@+id/MainMenuImage"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:src="@drawable/pacman"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pacman_wall"
         android:scaleType="fitXY"/>
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_marginTop="64dp"
+        android:fontFamily="serif-monospace"
+        android:text="PACMAN"
+        android:textColor="@color/white"
+        android:textSize="64sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/botones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/MainMenuImage"
-        android:layout_marginBottom="75dp"
-        android:layout_marginStart="35dp"
-        android:layout_marginLeft="35dp">
+        android:layout_marginBottom="64dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:layout_width="175dp"
             android:layout_height="65dp"
+            android:layout_marginBottom="5dp"
             android:onClick="resumeGame"
-            android:text="@string/resumeLabel"
-            android:layout_marginBottom="5dp"/>
+            android:text="@string/resumeLabel" />
 
         <Button
             android:layout_width="175dp"
             android:layout_height="65dp"
+            android:layout_marginBottom="5dp"
             android:onClick="showPlayScreen"
-            android:text="@string/play"
-            android:layout_marginBottom="5dp"/>
+            android:text="@string/play" />
 
         <Button
-            android:layout_width="175dp"
-            android:layout_height="65dp"
-            android:text="@string/settingsLabel"
-            android:layout_marginBottom="5dp"/>
-
-
-        <Button
+            android:id="@+id/button"
             android:layout_width="175dp"
             android:layout_height="65dp"
             android:onClick="showHelpScreen"
-            android:text="@string/help"
-            />
+            android:text="@string/help" />
 
     </LinearLayout>
 
-</RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
