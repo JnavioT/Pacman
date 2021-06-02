@@ -107,11 +107,11 @@ public class DrawingView extends SurfaceView implements Runnable, SurfaceHolder.
         }
 
         String formattedHighScore = String.format("%05d", highScore);
-        String hScore = "High Score : " + formattedHighScore;
+        String hScore = "Mejor Puntaje : " + formattedHighScore;
         canvas.drawText(hScore, 0, 2*blockSize - 10, paint);
 
         String formattedScore = String.format("%05d", currentScore);
-        String score = "Score : " + formattedScore;
+        String score = "Puntaje : " + formattedScore;
         canvas.drawText(score, 11 * blockSize, 2 * blockSize - 10, paint);
     }
 
